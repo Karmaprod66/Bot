@@ -4,7 +4,7 @@ const bot = new Client();
 let prefix = "k!"
 
 bot.on("ready" , function () {
-	bot.user.setActivity("Le serveur" , { type: "WATCHING" })
+	bot.user.setActivity("Se repose apres une dure journée" , { type: "CUSTOM_STATUS" })
 	console.log("Je suis pret !")
 });
 
