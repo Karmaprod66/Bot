@@ -4,8 +4,7 @@ const bot = new Client();
 let prefix = "k!"
 
 bot.on("ready" , function () {
-	bot.user.setActivity("Le silence.." , { type: "LISTENING" }),
-	bot.user.setStatus("dnd")
+	bot.user.setActivity("Le silence.." , { type: "LISTENING" })
 });
 
 //Commande test
