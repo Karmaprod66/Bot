@@ -27,18 +27,6 @@ bot.on("message" , message => {
 		.setDescription("**__Voici toutes mes commandes !__**\n\n**Bot :**\n`help`, Coming soon...\n\n**Outils :**\nComing soon...\n\n**Systèmes :**\nComing soon...\n\n**Fun :**\nComing soon...\n\n**Modération :**\nComing soon...\n\n**Soutenez le projet sur uTip :**\n[https://uTip.io/kspro](https://uTip.io/kspro)\n**Un probleme ? Voila le support :**\nComing soon...\n**Site officiel :**\nComing soon...")
 		.setFooter(prefix + "help | " + "Executé par " + message.author.username )
 		message.channel.send(embed)
-	}	
-        //commande Site
-	if (message.content === prefix + "site") {
-	    message.channel.send("Le site est actuellement en developpement...")
-	}
-	//commande support
-	if (message.content === prefix + "support") {
-	    message.channel.send("*Le serveur support n'est, pour le moment, pas encore fait ou terminer mais sera accesible tres bientot.*")
-	}
-	//commande betatesteur
-	if (message.content === prefix + "betatesteur") {
-	    message.channel.send("**Énorme remerciement aux betatesteur :**\n- Aucun pour le moment TwT")
 	}
 });
 
