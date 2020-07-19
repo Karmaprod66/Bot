@@ -24,7 +24,7 @@ bot.on("message" , message => {
 		.setColor( 195, 4, 4 )
 		.setThumbnail("https://skybot.fr/uploads/1594904373.png")
 		.setAuthor("Commandes de KarBot")
-		.setDescription("**__Voici toutes mes commandes !__**\n\n**Bot :**\n`help`,`site`, `support`, `betatesteur`, Coming soon...\n\n**Outils :**\nComing soon...\n\n**Systèmes :**\nComing soon...\n\n**Fun :**\nComing soon...\n\n**Modération :**\nComing soon...\n\n**Soutenez le projet sur uTip :**\n[https://uTip.io/kspro](https://uTip.io/kspro)\n**Un probleme ? Voila le support :**\nComing soon...\n**Site officiel :**\nComing soon...")
+		.setDescription("**__Voici toutes mes commandes !__**\n\n**Bot :**\n`help`, `site`, `support`, `betatesteur`, Coming soon...\n\n**Outils :**\nComing soon...\n\n**Systèmes :**\nComing soon...\n\n**Fun :**\nComing soon...\n\n**Modération :**\nComing soon...\n\n**Soutenez le projet sur uTip :**\n[https://uTip.io/kspro](https://uTip.io/kspro)\n**Un probleme ? Voila le support :**\nComing soon...\n**Site officiel :**\nComing soon...")
 		.setFooter(prefix + "help | " + "Executé par " + message.author.username )
 		message.channel.send(embed)
 	}	
