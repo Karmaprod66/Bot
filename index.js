@@ -5,14 +5,14 @@ let prefix = "k!"
 
 bot.on("ready" , function () {
 	bot.user.setActivity("Se repose apres une dure journée" , { type: "CUSTOM_STATUS" })
-	console.log("Je suis pret !")
+	bot.user.setStatus("dnd")
 });
 
 //Commande test
 bot.on("message" , message => {
 	if (message.content === prefix + "test") {
 		message.channel.send("Je suis la !!")
-		console.log("tester")
+		
 	}
 });
 
