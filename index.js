@@ -24,7 +24,7 @@ bot.on("message" , message => {
 		.setThumbnail("https://skybot.fr/uploads/1594904373.png")
 		.setAuthor("Commandes de KarBot")
 		.setDescription("**Le support :** *Coming soon...*\n**Site officiel :** *Coming soon...*\n**Notre uTip :** [https://uTip.io/kspro](https://uTip.io/kspro)")
-		.addField("Bot :", "`help`, `site`, `support`, `betatesteur`, Coming soon...")
+		.addField("Bot :", "`help`, `site`, `support`, `staff`, Coming soon...")
 		.addField("Systèmes :", "Coming soon...")
 		.addField("Modération :", "Coming soon...")
 		.addField("Fun :", "Coming soon...")
@@ -54,7 +54,7 @@ bot.on("message" , message => {
 		.setColor("DARK_RED")
 		.setAuthor("Merci à vous !")
 		.addField("Énorme remerciement au Staff :", "- Aucun pour le moment TwT")
-		.setFooter("Vous etes les meilleurs ! :heart:")
+		.setFooter("Vous etes les meilleurs ! ❤")
 	    	message.channel.send( staffEmbed )
 	}
         //commande prefix
