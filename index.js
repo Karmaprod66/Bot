@@ -20,28 +20,51 @@ bot.on("message" , message => {
 	//commande help
 	if (message.content === prefix + "help") {
 		let embed = new MessageEmbed()
-		.setColor( 195, 4, 4 )
+		.setColor("DARK_RED")
 		.setThumbnail("https://skybot.fr/uploads/1594904373.png")
 		.setAuthor("Commandes de KarBot")
-		.setDescription("**__Voici toutes mes commandes !__**\n\n**Bot :**\n`help`, `site`, `support`, `betatesteur`, `prefix`, Coming soon...\n\n**Systemes :**\nComing soon...\n\n**Modération :**\nComing soon...\n\n**Fun :**\nComing soon...\n\n**Outils :**\nComing soon...\n\n**Soutenez le projet sur uTip :**\n[https://uTip.io/kspro](https://uTip.io/kspro)\n**Un probleme ? Voila le support :**\nComing soon...\n**Site officiel :**\nComing soon...")
+		.setDescription("**Le support :** *Coming soon...*\n**Site officiel :** *Coming soon...*\n**Notre uTip :** [https://uTip.io/kspro](https://uTip.io/kspro)")
+		.addField("Bot :", "`help`, `site`, `support`, `betatesteur`, Coming soon...")
+		.addField("Systèmes :", "Coming soon...")
+		.addField("Modération :", "Coming soon...")
+		.addField("Fun :", "Coming soon...")
+		.addField("Outils :", "Coming soon...")
 		.setFooter(prefix + "help | " + "Executé par " + message.author.username )
 		message.channel.send(embed)
 	}	
         //commande Site
 	if (message.content === prefix + "site") {
-	    message.channel.send("Le site est actuellement en developpement...")
+		let siteEmbed = new MessageEmbed()
+		.setColor("DARK_RED")
+		.setAuthor("Site officiel de Karma's Production")
+	    	message.channel.send("Le site est actuellement en developpement...")
 	}
 	//commande support
 	if (message.content === prefix + "support") {
-	    message.channel.send("*Le serveur support n'est, pour le moment, pas encore fait ou terminer mais sera accesible tres bientot.*")
+		let supportEmbed = new MessageEmbed()
+		.setColor("DARK_RED")
+		.setAuthor("Le serveur Support de KarBot")
+		.setDescription("*Le serveur support n'est, pour le moment, pas encore fait ou terminer mais sera accesible tres bientot.*")
+		.setFooter(prefix + "support | Executé par " + message.author.username )
+	    	message.channel.send( supportEmbed )
 	}
-	//commande betatesteur
-	if (message.content === prefix + "betatesteur") {
-	    message.channel.send("**Énorme remerciement aux betatesteur :**\n- Aucun pour le moment TwT")
+	//commande staff
+	if (message.content === prefix + "staff") {
+		let staffEmbed = new MessageEmbed()
+		.setColor("DARK_RED")
+		.setAuthor("Merci à vous !")
+		.addField("Énorme remerciement au Staff :", "- Aucun pour le moment TwT")
+		.setFooter("Vous etes les meilleurs ! :heart:")
+	    	message.channel.send( staffEmbed )
 	}
         //commande prefix
         if (message.content === prefix + "prefix") {
-            message.channel.send("Mon prefix actuel est : " + prefix)
+		let prefixEmbed = new MessageEmbed()
+		.setColor("DARK_RED")
+		.setAuthor("Prefix actuel de KarBot") 
+		.addField("Voici le prefix actuel défini de Karbot", "Prefix : " + prefix) 
+		.setFooter(prefix + "prefix | Executé par " + message.author.username )
+            	message.channel.send( prefixEmbed )
         }
 });
 
