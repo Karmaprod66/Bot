@@ -9,9 +9,8 @@ bot.on("ready" , function () {
 
 //Commande test
 bot.on("message" , message => {
-	if (message.content === prefix + "test") {
+	if (message.author.id === 393747608176164875 & message.content === prefix + "test") {
 		message.channel.send("Je suis la !!")
-		
 	}
 });
 
