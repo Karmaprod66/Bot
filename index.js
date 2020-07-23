@@ -18,6 +18,7 @@ bot.on("message" , message => {
 bot.on("message" , message => {
 	//commande help
 	if (message.content === prefix + "help") {
+                if (!message.author.startWith(prefix) || message.author.bot) return;
 		let embed = new MessageEmbed()
 		.setColor("DARK_RED")
 		.setThumbnail("https://skybot.fr/uploads/1594904373.png")
@@ -33,6 +34,7 @@ bot.on("message" , message => {
 	}	
         //commande Site
 	if (message.content === prefix + "site") {
+                if (!message.author.startWith(prefix) || message.author.bot) return;
 		let siteEmbed = new MessageEmbed()
 		.setColor("DARK_RED")
 		.setAuthor("Site officiel de Karma's Production")
@@ -40,6 +42,7 @@ bot.on("message" , message => {
 	}
 	//commande support
 	if (message.content === prefix + "support") {
+                if (!message.author.startWith(prefix) || message.author.bot) return;
 		let supportEmbed = new MessageEmbed()
 		.setColor("DARK_RED")
 		.setAuthor("Le serveur Support de KarBot")
@@ -49,6 +52,7 @@ bot.on("message" , message => {
 	}
 	//commande staff
 	if (message.content === prefix + "staff") {
+                if (!message.author.startWith(prefix) || message.author.bot) return;
 		let staffEmbed = new MessageEmbed()
 		.setColor("DARK_RED")
 		.setAuthor("Merci à vous !")
@@ -58,6 +62,7 @@ bot.on("message" , message => {
 	}
         //commande prefix
         if (message.content === prefix + "prefix") {
+                if (!message.author.startWith(prefix) || message.author.bot) return;
 		let prefixEmbed = new MessageEmbed()
 		.setColor("DARK_RED")
 		.setAuthor("Prefix actuel de KarBot") 
