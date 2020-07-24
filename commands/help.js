@@ -17,6 +17,6 @@ module.exports = {
 			.addField("Outils :", "Coming soon...")
 			.setFooter(prefix + "help | " + "Executé par " + message.author.username )
 			message.channel.send(embed)
-		};
-	};
-};
+		}
+	}
+}
