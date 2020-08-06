@@ -26,4 +26,4 @@ bot.on("message" , message => {
 	bot.commands.get(command).execute(message, args);
 });
 
-bot.login("NzIyNzU0OTkxMTY4Njg0MDQ2.XxPaig.byq1F77q4qimtERCweyjUSPoVaQ");
+bot.login("TOKEN");
