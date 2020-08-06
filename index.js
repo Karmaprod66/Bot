@@ -26,4 +26,4 @@ bot.on("message" , message => {
 	bot.commands.get(command).execute(message, args);
 });
 
-bot.login("TOKEN");
+bot.login(TOKEN);
